@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBDFE955-ABB3-47C2-A66C-F63E54A4F389}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneOtomasyonSistemi</RootNamespace>
+    <AssemblyName>KutuphaneOtomasyonSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.46.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.46\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaglanClass.cs" />
+    <Compile Include="cezalimusterilerpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cezalimusterilerpaneli.Designer.cs">
+      <DependentUpon>cezalimusterilerpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cikis.cs" />
+    <Compile Include="girispaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girispaneli.Designer.cs">
+      <DependentUpon>girispaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hakkindapaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hakkindapaneli.Designer.cs">
+      <DependentUpon>hakkindapaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hareketlerpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hareketlerpaneli.Designer.cs">
+      <DependentUpon>hareketlerpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="istatistikpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="istatistikpaneli.Designer.cs">
+      <DependentUpon>istatistikpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategorilerpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategorilerpaneli.Designer.cs">
+      <DependentUpon>kategorilerpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaplarpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaplarpaneli.Designer.cs">
+      <DependentUpon>kitaplarpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaptakippaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaptakippaneli.Designer.cs">
+      <DependentUpon>kitaptakippaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneOtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneOtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="musterilerpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musterilerpaneli.Designer.cs">
+      <DependentUpon>musterilerpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personellerpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personellerpaneli.Designer.cs">
+      <DependentUpon>personellerpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="raflarpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raflarpaneli.Designer.cs">
+      <DependentUpon>raflarpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="raporlamapanelics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporlamapanelics.Designer.cs">
+      <DependentUpon>raporlamapanelics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifreislemleripaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifreislemleripaneli.Designer.cs">
+      <DependentUpon>sifreislemleripaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="veritabaniyonetimpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veritabaniyonetimpaneli.Designer.cs">
+      <DependentUpon>veritabaniyonetimpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="versiyon.cs" />
+    <Compile Include="yardimpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yardimpaneli.Designer.cs">
+      <DependentUpon>yardimpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yayinevipaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yayinevipaneli.Designer.cs">
+      <DependentUpon>yayinevipaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yazarlarpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yazarlarpaneli.Designer.cs">
+      <DependentUpon>yazarlarpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yonetimpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yonetimpaneli.Designer.cs">
+      <DependentUpon>yonetimpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cezalimusterilerpaneli.resx">
+      <DependentUpon>cezalimusterilerpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girispaneli.resx">
+      <DependentUpon>girispaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hakkindapaneli.resx">
+      <DependentUpon>hakkindapaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hareketlerpaneli.resx">
+      <DependentUpon>hareketlerpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="istatistikpaneli.resx">
+      <DependentUpon>istatistikpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategorilerpaneli.resx">
+      <DependentUpon>kategorilerpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaplarpaneli.resx">
+      <DependentUpon>kitaplarpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaptakippaneli.resx">
+      <DependentUpon>kitaptakippaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterilerpaneli.resx">
+      <DependentUpon>musterilerpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personellerpaneli.resx">
+      <DependentUpon>personellerpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raflarpaneli.resx">
+      <DependentUpon>raflarpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raporlamapanelics.resx">
+      <DependentUpon>raporlamapanelics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="sifreislemleripaneli.resx">
+      <DependentUpon>sifreislemleripaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veritabaniyonetimpaneli.resx">
+      <DependentUpon>veritabaniyonetimpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yardimpaneli.resx">
+      <DependentUpon>yardimpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yayinevipaneli.resx">
+      <DependentUpon>yayinevipaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yazarlarpaneli.resx">
+      <DependentUpon>yazarlarpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yonetimpaneli.resx">
+      <DependentUpon>yonetimpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="KutuphaneOtomasyonDataSet.xsc">
+      <DependentUpon>KutuphaneOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneOtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneOtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneOtomasyonDataSet.xss">
+      <DependentUpon>KutuphaneOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_list1.ico" />
+    <None Include="Resources\icons8_update_2.ico" />
+    <None Include="Resources\icons8_Save_as.ico" />
+    <None Include="Resources\icons8_Delete_Document_2.ico" />
+    <None Include="Resources\icons8_Delete_Document_1.ico" />
+    <None Include="Resources\icons8_delete.ico" />
+    <None Include="Resources\icons8_Plus.ico" />
+    <None Include="Resources\icons8_minus.ico" />
+    <None Include="Resources\ideal-devlet-2.png" />
+    <None Include="Resources\icons8_filter1.ico" />
+    <None Include="Resources\library02.jpg" />
+    <None Include="Resources\by4.png" />
+    <None Include="Resources\library03.png" />
+    <None Include="Resources\giris.png" />
+    <None Include="Resources\hakkinda.png" />
+    <None Include="Resources\hakkinda02.png" />
+    <None Include="Resources\icons8_github_144px.png" />
+    <None Include="Resources\icons8_linkedin_208px.png" />
+    <None Include="Resources\icons8_mail_64px.png" />
+    <None Include="Resources\icons8_website_64px_2.png" />
+    <None Include="Resources\icons8_youtube_512px.png" />
+    <None Include="Resources\giris01.png" />
+    <None Include="Resources\icons8_padlock_48px.png" />
+    <None Include="Resources\icons8_user_48px.png" />
+    <None Include="Resources\icons8_cursor_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_update_21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkindasablon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batuhanyalin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yardimpaneli.png" />
+    <None Include="Resources\yardimpaneli2.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
