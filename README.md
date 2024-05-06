@@ -37,3 +37,16 @@ Program C# FORM ve MSSQL/T-SQL ile birlikte kodlanmıştır. Program açılış�
 
 Bunun gibi bir sürü ek kural ve özellik mevcuttur ve program sürekli güncel tutulacaktır.
 # Programdan Görseller
+![Giriş Ekranı](https://github.com/batuhanyalin/KutuphaneOtomasyonSistemi/blob/main/KutuphaneOtomasyonSistemi/ScreenShots/login.jpg?raw=true)
+
+![Ana Ekran](https://github.com/batuhanyalin/KutuphaneOtomasyonSistemi/blob/main/KutuphaneOtomasyonSistemi/ScreenShots/main.jpg?raw=true)
+
+![Hareketler](https://github.com/batuhanyalin/KutuphaneOtomasyonSistemi/blob/main/KutuphaneOtomasyonSistemi/ScreenShots/hareketler.jpg?raw=true)
+
+![İstatistik](https://github.com/batuhanyalin/KutuphaneOtomasyonSistemi/blob/main/KutuphaneOtomasyonSistemi/ScreenShots/istatistik.jpg?raw=true)
+
+![Personel Takip](https://github.com/batuhanyalin/KutuphaneOtomasyonSistemi/blob/main/KutuphaneOtomasyonSistemi/ScreenShots/personeltakip.jpg?raw=true)
+
+![Müşteri Takip](https://github.com/batuhanyalin/KutuphaneOtomasyonSistemi/blob/main/KutuphaneOtomasyonSistemi/ScreenShots/musteritakip.jpg?raw=true)
+
+![Kitap Takip](https://github.com/batuhanyalin/KutuphaneOtomasyonSistemi/blob/main/KutuphaneOtomasyonSistemi/ScreenShots/kitaptakip.jpg?raw=true)
